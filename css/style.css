@@ -10,7 +10,7 @@
 
 :root{
   --bg:#f7f3e8; --card:#fffdf8; --sand:#ece5d3; --line:#ece5d3; --line2:#f0ead9;
-  --ink:#22303d; --muted:#4a5866; --navy:#2c4054; --blue:#435e78; --pale:#dde5ec; --accent:#9a5f38;
+  --ink:#2c4054; --muted:#4a5866; --navy:#2c4054; --blue:#435e78; --pale:#dde5ec; --accent:#9a5f38;
   --serif:'Cormorant Garamond',Georgia,serif; --sans:'DM Sans',system-ui,sans-serif;
   --pad:clamp(20px,5vw,80px);
 }
@@ -39,14 +39,14 @@ h1,h2,h3{font-family:var(--serif);font-weight:500;color:var(--navy);margin:0}
 .linkbtn{background:none;border:0;padding:0;font:inherit;cursor:pointer}
 
 /* en-tête */
-.top{position:sticky;top:0;z-index:20;background:rgba(247,243,232,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top{position:sticky;top:0;z-index:20;background:#435e78;border-bottom:1px solid #36506a}
 .top .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 32px;padding-top:14px;padding-bottom:14px}
 .brand{text-decoration:none;display:block}
-.brand b{display:block;font-family:var(--serif);font-size:26px;font-weight:600;line-height:1.1;color:var(--navy)}
-.brand span{display:block;font-size:10.5px;letter-spacing:.14em;color:var(--muted);margin-top:3px}
+.brand b{display:block;font-family:var(--serif);font-size:26px;font-weight:600;line-height:1.1;color:#fff}
+.brand span{display:block;font-size:10.5px;letter-spacing:.14em;color:#dbe4ec;margin-top:3px}
 .nav{display:flex;flex-wrap:wrap;align-items:center;gap:8px 34px}
-.nav a,.nav button{background:none;border:0;padding:0;font-size:16px;font-weight:600;color:#0f1a24;text-decoration:none;cursor:pointer;transition:color .15s}
-.nav a:hover,.nav button:hover{color:var(--accent)}
+.nav a,.nav button{background:none;border:0;padding:0;font-size:16px;font-weight:600;color:#fff;text-decoration:none;cursor:pointer;transition:color .15s}
+.nav a:hover,.nav button:hover{color:#f3dcc6}
 
 /* héros */
 .hero{padding-top:56px;padding-bottom:88px;display:flex;flex-wrap:wrap;align-items:center;gap:48px}
@@ -88,7 +88,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:500;color:var(--navy);margin:0}
 .card .d{font-size:15px;line-height:1.55;color:var(--muted);margin-top:10px}
 .card .foot{margin-top:22px;padding-top:16px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:12px;width:100%}
 .card .foot b{font-weight:400;font-size:14px}
-.card .foot span{font-size:15px;font-weight:500;color:var(--blue);text-decoration:underline;text-underline-offset:4px}
+.card .foot span{font-size:15px;font-weight:500;color:var(--blue);text-decoration:underline;text-underline-offset:4px;white-space:nowrap;flex:none}
 
 /* à propos */
 .about{background:var(--sand);scroll-margin-top:60px}
