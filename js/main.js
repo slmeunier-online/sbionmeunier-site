@@ -71,7 +71,7 @@
     s.src = 'https://assets.calendly.com/assets/external/widget.js';
     s.async = true;
     s.onload = function () {
-      if (window.Calendly) window.Calendly.initInlineWidget({ url: el.getAttribute('data-url'), parentElement: el });
+      if (window.Calendly) window.Calendly.initInlineWidget({ url: el.getAttribute('data-cal-url'), parentElement: el });
     };
     s.onerror = function () { calLoaded = false; };
     document.head.appendChild(s);
