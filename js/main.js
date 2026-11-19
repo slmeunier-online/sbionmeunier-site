@@ -11,6 +11,7 @@
     var t = dlg.querySelector('#p-' + id + ' h2');
     dlg.setAttribute('aria-label', t ? t.textContent : 'Détails');
     sheet.scrollTop = 0;
+    sheet.classList.toggle('sheet--rdv', id === 'rdv');
     if (id === 'rdv') loadCalendly();
   }
 
